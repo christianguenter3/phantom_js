@@ -54,8 +54,6 @@ page.open('https://' + user + ':' + password + '@websmp230.sap-ag.de/sap/bc/bsp/
                 });
 
                 setTimeout(function() {
-                    page.render('screenshot.png');
-
                     text = page.evaluate(function() {
                         return document.querySelector('#messageBar-txt').innerText;
                     });
